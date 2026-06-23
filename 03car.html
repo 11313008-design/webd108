@@ -18,6 +18,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -29,15 +30,73 @@
 	height: 50px;
 	width: 1280px;
 }
+.titel {
+	font-family: "微軟正黑體";
+	font-size: 36px;
+	text-align: center;
+}
+.textword {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+}
+.textword {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
 </head>
 
 <body>
 <div id="container">
-  <div id="header"><img src="images/t01- 2.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="header"><img src="images/t03.jpg" width="1280" height="150" /></div>
+  <div id="article">
+    <table width="989" height="588" border="1">
+      <tr>
+        <td colspan="2" align="center"><a name="top" id="top"></a>公車 | <a href="#a01">火車</a> | <a href="#a02">旅遊地圖</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#00CCFF" class="titel">公車</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="textword">嘉義市區公車網絡方便，串連各大景點與生活區域。市區公車可到文化路夜市、嘉義市立美術館、蘭潭風景區等熱門景點，班次穩定且票價親民，適合遊客與市民日常使用。嘉義也有部分跨縣市公車，方便前往附近的阿里山或其他鄰近城鎮。搭公車旅行，不僅經濟實惠，也能欣賞沿途城市風景，是體驗嘉義生活的一種便利方式。 </td>
+      </tr>
+      <tr>
+        <td width="485" align="center"><img src="images/11b.jpg" width="300" height="200" onclick="MM_openBrWindow('images/11s.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td width="488" align="center"><img src="images/66s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/66b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#FF99CC" class="titel"><a name="a01" id="a01"></a>火車</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="textword">阿里山森林鐵路是嘉義最具代表性的觀光交通工具，也被稱為「阿里山小火車」。從嘉義市區出發，沿途穿越茶園、林道與山谷，最終抵達阿里山風景區。旅程中可欣賞壯麗山景、雲海與櫻花美景，是遊客體驗阿里山自然風光的重要方式。小火車具有懷舊魅力，也是嘉義特色旅遊的象徵。 <a href="#top">top</a></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images/33s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/33b.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/44s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/44b.jpg','','width=800,height=600')" onmousemove="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#33CC99" class="titel"><a name="a02" id="a02"></a>旅遊地圖</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="textword"><p><span class="textword">利用 Google Maps 製作這張嘉義旅遊地圖，將嘉義市與周邊熱門景點、美食店家及交通位置完整整理在地圖中，方便旅客快速了解各景點之間的距離與路線。地圖中標示了嘉義著名觀光景點、在地特色美食以及重要交通站點，讓遊客能更有效率地安排旅遊行程。其中也介紹了阿里山國家森林遊樂區，以及具有特色的 阿里山森林鐵路，旅客可以搭乘懷舊小火車欣賞沿途山林、茶園與自然風景，感受嘉義獨特的觀光魅力。透過這張地圖，不僅能更深入認識嘉義的文化特色與自然景觀，也能讓旅程更加便利、充實且有方向。</span><a href="#top">top</a></p></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><img src="images/travel.png" width="800" height="392" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"> 
     <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">探訪美食</a></li>
